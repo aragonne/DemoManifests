@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: echo-presync
+  namespace: demoargo
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+spec:
+  template:
+    spec:
+      containers:
+      - name: echo-presync
+        image: alpine
+        command: ["echo", "L’application a success."]
