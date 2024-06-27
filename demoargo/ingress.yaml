@@ -5,7 +5,7 @@ metadata:
   namespace: demoargo
 spec:
   rules:
-  - host: 127.0.0.1
+  - host: minikube
     http:
       paths:
       - path: /truc
