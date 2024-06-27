@@ -21,18 +21,18 @@ spec:
             cpu: "500m"
           limits:
             memory: "512Mi"
-            cpu: "1"l
+            cpu: "1"
         ports:
         - containerPort: 8080
         livenessProbe:
           httpGet:
-            path: /actuator/health/
+            path: /faux/actuator/health/
             port: 8080
           initialDelaySeconds: 35
           periodSeconds: 10
         readinessProbe:
           httpGet:
-            path: /actuator/health/
+            path: /faux/actuator/health/
             port: 8080
           initialDelaySeconds: 35
           periodSeconds: 5
