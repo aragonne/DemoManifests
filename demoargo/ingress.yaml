@@ -15,4 +15,3 @@ spec:
             name: demo-service
             port:
               number: 8080
-  tls: {}
