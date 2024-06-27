@@ -12,3 +12,4 @@ spec:
       - name: echo-presync
         image: alpine
         command: ["echo", "L’application sera synchronisé avec un nouvel état désiré."]
+      restartPolicy: Never

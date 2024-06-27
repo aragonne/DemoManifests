@@ -12,3 +12,4 @@ spec:
       - name: echo-presync
         image: alpine
         command: ["echo", "L’application a success."]
+      restartPolicy: Never
