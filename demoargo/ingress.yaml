@@ -8,7 +8,7 @@ spec:
   - host: minikube
     http:
       paths:
-      - path: /truc
+      - path: /
         pathType: Prefix
         backend:
           service:
