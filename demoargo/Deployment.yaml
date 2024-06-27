@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: 989988/demoapp:1.0.0
+        image: 989988/demoapp:truc
         resources:
           requests:
             memory: "256Mi"
@@ -26,13 +26,13 @@ spec:
         - containerPort: 8080
         livenessProbe:
           httpGet:
-            path: /faux/actuator/health/
+            path: /actuator/health/
             port: 8080
           initialDelaySeconds: 35
           periodSeconds: 10
         readinessProbe:
           httpGet:
-            path: /faux/actuator/health/
+            path: /actuator/health/
             port: 8080
           initialDelaySeconds: 35
           periodSeconds: 5
