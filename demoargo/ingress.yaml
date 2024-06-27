@@ -5,7 +5,8 @@ metadata:
   namespace: demoargo
 spec:
   rules:
-  - http:
+  - host: 127.0.0.1
+    http:
       paths:
       - path: /truc
         pathType: Prefix
