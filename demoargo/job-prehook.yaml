@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: echo-presync
+  name: echo-success
   namespace: demoargo
   annotations:
     argocd.argoproj.io/hook: PostSync
