@@ -5,6 +5,7 @@ metadata:
   namespace: demoargo
   annotations:
     argocd.argoproj.io/hook: PostSyncs
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
   template:
     spec:
