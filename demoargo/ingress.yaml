@@ -5,13 +5,12 @@ metadata:
   namespace: demoargo
 spec:
   rules:
-  - host: demoargo.example
-    http:
+  - http:
       paths:
-      - path: /
+      - path: /truc
         pathType: Prefix
         backend:
           service:
             name: demo-service
             port:
-              number: 8080
+              number: 80
