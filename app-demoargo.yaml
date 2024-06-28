@@ -4,13 +4,13 @@ metadata:
   name: guestbook
   namespace: argocd
 spec:
-  project: default
+  project: spring-apps
   source:
     repoURL: 'https://github.com/aragonne/DemoManifests.git'
     path: demoargo
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: demoargo
+    namespace: spring-apps-dev
   syncPolicy:
     automated: {}

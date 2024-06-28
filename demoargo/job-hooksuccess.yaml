@@ -2,7 +2,6 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: echo-success
-  namespace: demoargo
   annotations:
     argocd.argoproj.io/hook: PostSyncs
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
